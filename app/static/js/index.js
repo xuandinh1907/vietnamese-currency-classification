@@ -40,15 +40,15 @@ $('.btn-capture-image').on('click', function(e) {
       data: JSON.stringify(json_data),
       success: function(data) {
         console.log(data)
-        html = '<ul>'
-        for( let i = 0; i < data['probs'].length; i++) {
-          data_splitted = data['probs'][i]
+        // html = '<ul>'
+        // for( let i = 0; i < data['probs'].length; i++) {
+        //   data_splitted = data['probs'][i]
 
-          html += '<li><span class="num">' + data_splitted[0] + '</span> <span class="prob">'+ data_splitted[1] + '</span></li>'
-        }
-        html += '</ul>'
+        //   html += '<li><span class="num">' + data_splitted[0] + '</span> <span class="prob">'+ data_splitted[1] + '</span></li>'
+        // }
+        // html += '</ul>'
 
-        $('#probs').text('').append(html)
+        // $('#probs').text('').append(html)
         $('#class-result').text('Predictions: ' + data['label']);
 
         // $('.box-main').css('height', $('.box-results').height());
