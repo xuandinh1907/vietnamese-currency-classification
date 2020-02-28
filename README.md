@@ -48,3 +48,5 @@ Validation accuracy: 88.54%
 
 # Run flask app
 Run app by command `python main.py`
+
+I also include my model whose memory is just about 20 MB
